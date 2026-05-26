@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ADHD Jarvis</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1rem; line-height: 1.65; color: #222; }
+  h1 { margin-bottom: .2rem; }
+  h2 { margin-top: 2rem; }
+  .meta { color: #666; font-size: .9rem; }
+  a { color: #0969da; }
+  code { background: #f4f4f4; padding: 1px 4px; border-radius: 3px; font-size: .92em; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: 2026-05-27</p>
+
+<h2>1. Scope</h2>
+<p>This policy applies to the personal automation software (the "App") that connects to Google Calendar on behalf of a single authenticated user. The App is operated privately by the developer for personal use, and is not offered as a public service.</p>
+
+<h2>2. Information We Access</h2>
+<p>With the user's explicit OAuth consent, the App accesses:</p>
+<ul>
+  <li>Google Calendar events on the user's calendars (read and write) via the scopes <code>https://www.googleapis.com/auth/calendar</code> and <code>https://www.googleapis.com/auth/calendar.events</code>.</li>
+  <li>The list of calendars the authenticated account owns or is subscribed to.</li>
+</ul>
+<p>The App does not request access to email, contacts, Drive files, or any other Google services.</p>
+
+<h2>3. How We Use the Information</h2>
+<p>Calendar data is read and written solely to:</p>
+<ul>
+  <li>Create, read, update, and delete events that represent the user's tasks, reviews, and reminders.</li>
+  <li>Synchronize the user's personal task system with their calendar.</li>
+</ul>
+
+<h2>4. Where Data Is Stored</h2>
+<p>OAuth tokens and any cached calendar data are stored on the user's own personal NAS (Network Attached Storage) device, in restricted-permission directories (<code>chmod 600</code>) accessible only to the user. No data is transmitted to any third-party server other than Google's own APIs.</p>
+
+<h2>5. Sharing</h2>
+<p>The App does not share, sell, or transmit any user data to third parties. All data processing happens locally on the user's NAS.</p>
+
+<h2>6. Retention &amp; Deletion</h2>
+<p>The user may revoke the App's access at any time at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. The user may delete locally cached tokens and data at any time by removing the relevant files from the NAS.</p>
+
+<h2>7. Security</h2>
+<p>OAuth credentials and tokens are stored with restricted file permissions (700/600) and are accessible only to the OS user running the automation. The NAS is reachable only via the user's private Tailscale network.</p>
+
+<h2>8. Contact</h2>
+<p>Questions about this policy may be directed to <a href="mailto:qwert799631@gmail.com">qwert799631@gmail.com</a>.</p>
+
+</body>
+</html>
